@@ -1,0 +1,16 @@
+
+
+{% block content %}
+    <h1>Create</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        student_id: <input type="text" name="student_id"/>
+        name: <input type="text" name="name"/>
+       place: <input type="text" name="place"/>
+       phoneno: <input type="text" name="phoneno"/>
+       mark: <input type="text" name="mark"/>
+
+
+        <button type="submit">Create</button>
+    </form>
+{% endblock %}
